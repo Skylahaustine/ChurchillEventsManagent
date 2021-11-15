@@ -178,7 +178,14 @@ img#banner-field{
 					</div>
 					<div class="form-group row" <?php echo isset($payment_type) && $payment_type == 1 ? "style='display:none'" : '' ?>>
 						<div class="col-md-5">
-							<label for="" class="control-label">Registration Fee</label>
+							<label for="" class="control-label">VIP Ticket Fee</label>
+							<input type="number" step="any" class="form-control text-right" name="vipamount" id ='vipamount'  value="<?php echo isset($vipamount) ? $vipamount :0 ?>" required autocomplete="off">
+						</div>
+					</div>
+
+					<div class="form-group row" <?php echo isset($payment_type) && $payment_type == 1 ? "style='display:none'" : '' ?>>
+						<div class="col-md-5">
+							<label for="" class="control-label">Regular Registration Fee</label>
 							<input type="number" step="any" class="form-control text-right" name="amount" id ='amount'  value="<?php echo isset($amount) ? $amount :0 ?>" required autocomplete="off">
 						</div>
 					</div>

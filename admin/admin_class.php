@@ -129,6 +129,7 @@ Class Action {
 		$data = " venue = '$venue' ";
 		$data .= ", address = '$address' ";
 		$data .= ", description = '$description' ";
+		$data .= ", seats = '$seats' ";
 		$data .= ", rate = '$rate' ";
 		if(empty($id)){
 			//echo "INSERT INTO arts set ".$data;

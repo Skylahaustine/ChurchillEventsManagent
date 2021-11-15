@@ -36,6 +36,7 @@
 									<th class="">Venue</th>
 									<th class="">Address</th>
 									<th class="">Description</th>
+									<th class="">Maximum Seats</th>
 									<th class="">Rate</th>
 									<th class="text-center">Action</th>
 								</tr>
@@ -59,6 +60,9 @@
 									</td>
 									<td class="">
 										 <p class="truncate"><?php echo $row['description'] ?></p>
+									</td>
+									<td class="">
+										 <p class="text-right"><?php echo $row['seats'] ?></p>
 									</td>
 									<td class="">
 										 <p class="text-right"><?php echo number_format($row['rate'],2) ?></p>

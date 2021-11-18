@@ -219,6 +219,27 @@ Class Action {
 	}
 	function save_register(){
 		extract($_POST);
+		foreach ($name as $k => $value) {
+			$data = " event_id = $event_id ";
+			$data .= " , name = '$name[$k]' ";
+			$data .= " , address = '$address[$k]' ";
+			$data .= " , email = '$email[$k]' ";
+			$data .= " , contact = '$contact[$k]' ";
+			
+			
+			
+			$save[] = $this->db->query("INSERT INTO audience set ".$data);
+			$save = $this->db->query("UPDATE INTO audience set ".$data);
+			
+
+				
+			}
+			if($save)
+				return 1;
+		}
+
+	function save_registerr(){
+		extract($_POST);
 		$data = " event_id = '$event_id' ";
 		$data .= ", name = '$name' ";
 		$data .= ", address = '$address' ";

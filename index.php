@@ -158,7 +158,7 @@
                 </div>
             </div>
             <br>
-            <div class="container"><div class="small text-center text-muted">Copyright © 2021 - <?php echo $_SESSION['system']['name'] ?> | <a class="text-success" href="https://www.sourcecodester.com/" target="_blank">ITSOURCECODE</a></div></div>
+            <div class="container"><div class="small text-center text-muted">Copyright © 2021 - <?php echo $_SESSION['system']['name'] ?> | <a class="text-success" href="https://stinesrealsoftware.me/" target="_blank"></a></div></div>
         </footer>
         
        <?php include('footer.php') ?>

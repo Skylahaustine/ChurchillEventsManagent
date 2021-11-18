@@ -1,4 +1,3 @@
-
 <div class="container-fluid">
 	<div class="col-lg-12">
 	<form action="" id="book-flight">
@@ -32,8 +31,11 @@
 <script>
 	$('#go').click(function(){
 		start_load()
-		
-	
+		if('<?php echo $_GET['max'] ?>' < $('#count').val()){
+			alert("The number of person can't be greater than the available flight seats.")
+					end_load()
+			return false;
+		}
 		$.ajax({
 			url:"get_fields.php?count="+$('#count').val(),
 			success:function(resp){
@@ -47,52 +49,22 @@
 
 		})
 	})
-
-
-
-
-
-	$('.datetimepicker').datetimepicker({
-	      format:'Y/m/d H:i',
-	      startDate: '+3d'
-	  })
-	$('#manage-register').submit(function(e){
+	$('#book-flight').submit(function(e){
 		e.preventDefault()
 		start_load()
-		$('#msg').html('')
 		$.ajax({
 			url:'admin/ajax.php?action=save_register',
-			data: new FormData($(this)[0]),
-		    cache: false,
-		    contentType: false,
-		    processData: false,
-		    method: 'POST',
-		    type: 'POST',
+			method:"POST",
+			data:$(this).serialize(),
 			success:function(resp){
-				if(resp==1){
-					alert_toast("Registration Request Sent.",'success')
-						end_load()
-						uni_modal("","register_msg.php")
-
+				if(resp ==1 ){
+					$('.modal').modal('hide')
+					end_load()
+					alert_toast("Flight successfully booked.","success")
 				}
 			}
 		})
 	})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </script>
 <style>
 	#uni_modal .modal-footer{

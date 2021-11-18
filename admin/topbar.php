@@ -16,7 +16,8 @@
   		
   		</div>
       <div class="col-md-4 float-left text-white">
-        <large><b><?php echo isset($_SESSION['system']['name']) ? $_SESSION['system']['name'] : '' ?></b></large>
+      <a class="navbar-brand js-scroll-trigger" href="index.php?page=home"><?php echo $_SESSION['system']['name'] ?></a>
+        
       </div>
 	  	<div class="float-right">
         <div class=" dropdown mr-4">

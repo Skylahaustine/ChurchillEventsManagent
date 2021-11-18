@@ -1,12 +1,12 @@
 
 <div class="container-fluid">
 	<div class="col-lg-12">
-	<form action="" id="book-flight">
-		<input type="hidden" name="flight_id" value="<?php echo $_GET['id'] ?>">
+	<form action="" id="b">
+		<input type="hidden" name="event_id" value="<?php echo $_GET['id'] ?>">
 		<div class="form-group row" id="qty">
 			<div class="col-md-3">
 			<label for="" class="control-label">Person/s</label>
-			<input type="number" class="form-control text-right" min='1' value="1" id="count" max="5">
+			<input type="number" class="form-control text-right" min='1' value="1" id="count" max="5" onkeydown="return false">
 			</div>
 			<div class="col-md-2">
 			<label for="" class="control-label">&nbsp;</label>

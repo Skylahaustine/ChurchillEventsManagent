@@ -130,7 +130,7 @@ Class Action {
 		$data .= ", address = '$address' ";
 		$data .= ", description = '$description' ";
 		$data .= ", seats = '$seats' ";
-		$data .= ", rate = '$rate' ";
+	
 		if(empty($id)){
 			//echo "INSERT INTO arts set ".$data;
 			$save = $this->db->query("INSERT INTO venue set ".$data);

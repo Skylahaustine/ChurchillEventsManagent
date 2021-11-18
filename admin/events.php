@@ -59,9 +59,10 @@
 										 <p> <b><?php echo ucwords($row['venue']) ?></b></p>
 									</td>
 									<td class="">
-										 <p>Event: <b><?php echo ucwords($row['event']) ?></b></p>
-										 <p><small>Type: <b><?php echo $row['type']  == 1 ? "Public Event" : "Private Event" ?></small></b></p>
-										 <p><small>Fee: <b><?php echo $row['payment_type']  == 1 ? "Free" : number_format($row['amount'],2) ?></small></b></p>
+										
+										
+										 <p><small>Regular Fee: <b><?php echo  number_format($row['amount'],2) ?></small></b></p>
+										 <p><small>VIP Fee: <b><?php echo  number_format($row['vipamount'],2) ?></small></b></p>
 
 									</td>
 									<td>

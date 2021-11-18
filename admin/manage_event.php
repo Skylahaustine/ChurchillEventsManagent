@@ -160,22 +160,7 @@ img#banner-field{
 							<textarea name="description" id="description" class="form-control jqte" cols="30" rows="5" required><?php echo isset($description) ? html_entity_decode($description) : '' ?></textarea>
 						</div>
 					</div>
-					<div class="form-group">
-						<div class="form-check">
-						  <input class="form-check-input" type="checkbox" value="2" id="type" name="type" <?php echo isset($type) && $type == 2 ? "checked" : "" ?>>
-						  <label class="form-check-label" for="type">
-						    Private Event (<i>Do not show in website</i>)
-						  </label>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="form-check">
-						  <input class="form-check-input" type="checkbox" value="1" id="payment_status" name="payment_status" <?php echo isset($payment_type) && $payment_type == 1 ? "checked" : '' ?>>
-						  <label class="form-check-label" for="payment_status">
-						    Free For All
-						  </label>
-						</div>
-					</div>
+				
 					<div class="form-group row" <?php echo isset($payment_type) && $payment_type == 1 ? "style='display:none'" : '' ?>>
 						<div class="col-md-5">
 							<label for="" class="control-label">VIP Ticket Fee</label>

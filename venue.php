@@ -121,10 +121,10 @@ header.masthead,header.masthead:before {
                                 <div>
                                 <span class="truncate" style="font-size: inherit;"><small><?php echo ucwords($row['description']) ?></small></span>
                                     <br>
-                                <span class="badge badge-secondary"><i class="fa fa-tag"></i> Rate Per Hour: <?php echo number_format($row['rate'],2) ?></span>
+                                
                                 <br>
                                 <br>
-                                <button class="btn btn-success book-venue align-self-end" type="button" data-id='<?php echo $row['id'] ?>'>Book</button>
+                               
                                 </div>
                             </div>
                         </div>

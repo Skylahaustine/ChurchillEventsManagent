@@ -139,12 +139,7 @@ button.btn.btn-sm.btn-rounded.btn-sm.btn-dark {
 							<input type="number" class="form-control text-right" id = "seats"step="any" name="seats"  value="<?php echo isset($seats) ? $seats :0 ?>" required>
 						</div>
 					</div>
-					<div class="form-group row">
-						<div class="col-md-5">
-							<label for="" class="control-label">Rate Per Hour</label>
-							<input type="number" class="form-control text-right" step="any" name="rate"  value="<?php echo isset($rate) ? $rate :0 ?>" required>
-						</div>
-					</div>
+					
 					<div class="form-group">
 						<div><label for="" class="control-label">Venue Images</label></div>
 						<input type="file" id="chooseFile" multiple="multiple" onchange="displayIMG(this)" accept="image/x-png,image/gif,image/jpeg" style="display: none">

@@ -36,7 +36,7 @@
 									<th class="">Venue</th>
 									<th class="">Address</th>
 									<th class="">Description</th>
-									<th class="">Maximum Seats</th>
+									
 								
 									<th class="text-center">Action</th>
 								</tr>
@@ -61,12 +61,7 @@
 									<td class="">
 										 <p class="truncate"><?php echo $row['description'] ?></p>
 									</td>
-									<td class="">
-										 <p class="text-right"><?php echo $row['seats'] ?></p>
-									</td>
-									<td class="">
-								
-									</td>
+									
 									<td class="text-center">
 										<button class="btn btn-sm btn-outline-success edit_venue" type="button" data-id="<?php echo $row['id'] ?>" >Edit</button>
 										<button class="btn btn-sm btn-outline-danger delete_venue" type="button" data-id="<?php echo $row['id'] ?>">Delete</button>

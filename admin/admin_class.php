@@ -129,7 +129,7 @@ Class Action {
 		$data = " venue = '$venue' ";
 		$data .= ", address = '$address' ";
 		$data .= ", description = '$description' ";
-		$data .= ", seats = '$seats' ";
+		
 	
 		if(empty($id)){
 			//echo "INSERT INTO arts set ".$data;
@@ -271,7 +271,9 @@ Class Action {
 		$data = " event = '$event' ";
 		$data .= ",venue_id = '$venue_id' ";
 		$data .= ", schedule = '$schedule' ";
+		$data .= ", vipamount = '$vipamount' ";
 		$data .= ", audience_capacity = '$audience_capacity' ";
+		
 		if(isset($payment_status))
 		$data .= ", payment_type = '$payment_status' ";
 		else

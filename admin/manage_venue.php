@@ -133,12 +133,7 @@ button.btn.btn-sm.btn-rounded.btn-sm.btn-dark {
 							<textarea name="description" id="description" class="form-control" cols="30" rows="5" required><?php echo isset($description) ? $description : '' ?></textarea>
 						</div>
 					</div>
-					<div class="form-group row">
-						<div class="col-md-5">
-							<label for="" class="control-label">Maximum Seats</label>
-							<input type="number" class="form-control text-right" id = "seats"step="any" name="seats"  value="<?php echo isset($seats) ? $seats :0 ?>" required>
-						</div>
-					</div>
+					
 					
 					<div class="form-group">
 						<div><label for="" class="control-label">Venue Images</label></div>

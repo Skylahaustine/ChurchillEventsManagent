@@ -149,6 +149,6 @@ foreach($qry->fetch_array() as $k => $val){
 		viewer_modal($(this).attr('src'))
 	})
 	 $('#register').click(function(){
-        uni_modal("Submit Registration Request","registration.php?event_id=<?php echo $id ?>")
+        uni_modal("Submit Registration Request, Maximum 5","registration.php?event_id=<?php echo $id ?>")
     })
 </script>

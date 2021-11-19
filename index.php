@@ -153,13 +153,13 @@
                     </div>
                     <div class="col-lg-4 mr-auto text-center">
                         <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                        <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
+                        
                         <a class="d-block text-success" href="mailto:<?php echo $_SESSION['system']['email'] ?>"><?php echo $_SESSION['system']['email'] ?></a>
                     </div>
                 </div>
             </div>
             <br>
-            <div class="container"><div class="small text-center text-muted">Copyright © 2021 - <?php echo $_SESSION['system']['name'] ?> | <a class="text-success" href="https://stinesrealsoftware.me/" target="_blank"></a></div></div>
+            <div class="container"><div class="small text-center text-muted">Copyright © 2021  By Austine Mwangi  - <?php echo $_SESSION['system']['name'] ?> | <a class="text-success" href="https://stinesrealsoftware.me/" target="_blank"></a></div></div>
         </footer>
         
        <?php include('footer.php') ?>
